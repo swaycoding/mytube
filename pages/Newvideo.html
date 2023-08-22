@@ -17,16 +17,26 @@
         <h1>Import new videos onto MyTube</h1>
         <p>A wiseman once told me "Sharing is caring".</p>
     </header>
-    <body>
+    <main>
         <form>
-            <label for="title"><h3>Video Title</h3></label><br>
-            <input type="text" name="title">
-
+            <label for="title"><b>Video Title</b></label><br><br>
+            <input required type="text" name="title" id="Video Title" placeholder="Video Title">
+            <br><br><br>
+            <label for="description"><b>Description<b></label><br><br>
+            <textarea autocomplete autofocus name="description" id="description" rows="8" cols="40">.....</textarea>
+            <br><br><br>
+            <label for="video">Video File</label><br><br>
+            <input required name="video" id="video" type="file">
+            <br><br><br>
+            <select name="video" id="video" required>
+                <option value="video" selected>Choose Collection</option>
+                <option value="video">Collection 1</option>
+                <option value="video">Collection 2</option>
+                <option value="video">Collection 3</option>
+            </select>
+            <br><br><br>
+            <input type="submit" value="Upload Video">
         </form>
-    </body>
-
-    <hr><footer>
-        COPYRIGHT
-    </footer></hr>
+    </main>
 </body>
 </html>
